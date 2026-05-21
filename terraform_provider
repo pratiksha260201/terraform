@@ -1,0 +1,42 @@
+#terraform_aws_provider
+need to write terraform block 
+block = terraform 
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "6.45.0"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+}
+
+#terraform_azure_provider
+need to write terraform block 
+block = terraform 
+other than terraform all are argument inside {}
+
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "4.73.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  # Configuration options
+}
+
+To install this provider, copy and paste this code into your Terraform configuration. Then, run terraform init
+
+*******configure provide ********
+
+provider "aws"{
+  region = "us-east-2"
+}
